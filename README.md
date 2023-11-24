@@ -1,38 +1,37 @@
 # OC_Projet_3
-# L'agence "Santé publique France" a lancé un appel à projets pour trouver des idées innovantes d’applications en lien avec l'alimentation. 
-On souhaite y participer et proposer une idée d’application.
+# "Public Health France" agency has issued a call for projects to find innovative application ideas related to nutrition.
+We plan to participate and propose an application idea.
 
-## Les données
-Extrait de l’appel à projets :
+# The Data
+Excerpt from the call for projects:
 
-Le jeu de données Open Food Facts est disponible sur le site officiel. Les variables sont définies à cette adresse.
+The Open Food Facts dataset is available on the official website. The variables are defined at this address.
 
-Les champs sont séparés en quatre sections :
+The fields are divided into four sections:
 
-# Les informations générales sur la fiche du produit : nom, date de modification, etc.
-# Un ensemble de tags : catégorie du produit, localisation, origine, etc.
-# Les ingrédients composant les produits et leurs additifs éventuels.
-# Des informations nutritionnelles : quantité en grammes d’un nutriment pour 100 grammes du produit.
+## General information about the product sheet: name, date of modification, etc.
+## A set of tags: product category, location, origin, etc.
+## The ingredients that make up the products and any additives.
+## Nutritional information: quantity in grams of a nutrient for 100 grams of the product.
 
-## Mission
-Après avoir lu l’appel à projets, voici les différentes étapes que vous avez identifiées :
+# Mission
+After reading the call for projects, here are the different steps you have identified:
 
-1) Traiter le jeu de données, en :
+ Process the dataset by:
 
-Réfléchissant à une idée d’application.
-Repérant des variables pertinentes pour les traitements à venir, et nécessaires pour votre idée d’application.
-Nettoyant les données en :
-mettant en évidence les éventuelles valeurs manquantes, avec au moins 3 méthodes de traitement adaptées aux variables concernées,
-identifiant et en quantifiant les éventuelles valeurs aberrantes de chaque variable.
-Automatisant ces traitements pour éviter de répéter ces opérations
-Le programme doit fonctionner si la base de données est légèrement modifiée (ajout d’entrées, par exemple).
+Thinking of an application idea.
+Identifying relevant variables for upcoming treatments, necessary for your application idea.
+Cleaning the data by:
+highlighting possible missing values, with at least 3 methods of treatment adapted to the variables concerned,
+identifying and quantifying any aberrant values of each variable.
+Automating these treatments to avoid repeating these operations.
+The program must work if the database is slightly modified (e.g., addition of entries).
+Throughout the analysis, produce visualizations to better understand the data. Perform a univariate analysis for each interesting variable, to synthesize its behavior.
 
-2) Tout au long de l’analyse, produire des visualisations afin de mieux comprendre les données. Effectuer une analyse univariée pour chaque variable intéressante, afin de synthétiser son comportement.
+The call for projects specifies that the analysis must be easy to understand for a lay audience. Therefore, be attentive to readability: text size, color choices, sufficient clarity, and vary the graphics (box plots, histograms, pie charts, scatter plots, etc.) to best illustrate your point.
 
-L’appel à projets spécifie que l’analyse doit être simple à comprendre pour un public néophyte. Soyez donc attentif à la lisibilité : taille des textes, choix des couleurs, netteté suffisante, et variez les graphiques (boxplots, histogrammes, diagrammes circulaires, nuages de points…) pour illustrer au mieux votre propos.
+Confirm or refute hypotheses using multivariate analysis. Perform appropriate statistical tests to verify the significance of the results.
 
-3) Confirmer ou infirmer les hypothèses à l’aide d’une analyse multivariée. Effectuer les tests statistiques appropriés pour vérifier la significativité des résultats.
+Justify your application idea. Identify arguments justifying the feasibility (or not) of the application based on the Open Food Facts data.
 
-4) Justifier votre idée d’application. Identifier des arguments justifiant la faisabilité (ou non) de l’application à partir des données Open Food Facts.
-
-5) Rédiger un rapport d’exploration et pitcher votre idée durant la soutenance du projet.
+Write an exploration report and pitch your idea during the project defense.

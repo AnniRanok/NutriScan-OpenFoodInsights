@@ -1,37 +1,78 @@
-# OC_Projet_3
-# "Public Health France" agency has issued a call for projects to find innovative application ideas related to nutrition.
-We plan to participate and propose an application idea.
+# NutriScan: Open Food Facts App Feasibility Study
 
-# The Data
-Excerpt from the call for projects:
+This repository presents a complete data analysis project conducted in response to the **Public Health France** call for innovation. Our goal is to explore the **Open Food Facts** dataset to assess the **feasibility of creating a public-facing nutrition application** using open data.
 
-The Open Food Facts dataset is available on the official website. The variables are defined at this address.
 
-The fields are divided into four sections:
+##  Project Objectives
 
-## General information about the product sheet: name, date of modification, etc.
-## A set of tags: product category, location, origin, etc.
-## The ingredients that make up the products and any additives.
-## Nutritional information: quantity in grams of a nutrient for 100 grams of the product.
+- Propose and justify an innovative application idea related to nutrition
+- Explore the Open Food Facts dataset for relevant variables
+- Perform data cleaning, handling of missing/aberrant values
+- Automate preprocessing for future updates to the dataset
+- Provide insights through univariate and multivariate visualizations
+- Validate hypotheses through statistical testing
+- Deliver a structured feasibility analysis for the app idea
 
-# Mission
-After reading the call for projects, here are the different steps you have identified:
 
- Process the dataset by:
+##  Data Source
 
-Thinking of an application idea.
-Identifying relevant variables for upcoming treatments, necessary for your application idea.
-Cleaning the data by:
-highlighting possible missing values, with at least 3 methods of treatment adapted to the variables concerned,
-identifying and quantifying any aberrant values of each variable.
-Automating these treatments to avoid repeating these operations.
-The program must work if the database is slightly modified (e.g., addition of entries).
-Throughout the analysis, produce visualizations to better understand the data. Perform a univariate analysis for each interesting variable, to synthesize its behavior.
+- **Dataset**: [Open Food Facts](https://world.openfoodfacts.org/data)
+- **Data Structure**:
+  - Product metadata (name, brands, barcode, last modified)
+  - Tag fields (categories, labels, origin, countries sold)
+  - Ingredients & additives
+  - Nutritional values (per 100g)
 
-The call for projects specifies that the analysis must be easy to understand for a lay audience. Therefore, be attentive to readability: text size, color choices, sufficient clarity, and vary the graphics (box plots, histograms, pie charts, scatter plots, etc.) to best illustrate your point.
 
-Confirm or refute hypotheses using multivariate analysis. Perform appropriate statistical tests to verify the significance of the results.
 
-Justify your application idea. Identify arguments justifying the feasibility (or not) of the application based on the Open Food Facts data.
+##  Application Idea
 
-Write an exploration report and pitch your idea during the project defense.
+We propose an intuitive mobile/web app that allows users to:
+- Scan or search food products
+- Understand their nutritional profile visually
+- Get simple suggestions for healthier alternatives
+- Receive alerts on additives or allergens
+
+This tool would be designed for **non-specialists**, focusing on **accessibility and impact** on public habits.
+
+
+
+##  Methods
+
+###  Data Preparation
+- Handling missing values: median imputation, indicator variables, deletion
+- Detecting outliers using IQR, Z-score, visual inspection
+- Normalization for continuous variables
+
+###  Analysis
+- **Univariate analysis**: Histograms, box plots, pie charts
+- **Multivariate analysis**: Correlation matrix, scatter plots, PCA
+- **Statistical testing**: Chi² test, ANOVA, t-tests for feature selection
+
+
+
+##  Repository Structure
+
+```
+NutriScan-OpenFoodInsights/
+├── data/ # Raw and cleaned datasets
+├── notebooks/ # EDA, modeling, report preparation
+├── scripts/ # Preprocessing and cleaning automation
+├── visualizations/ # Plots and graphs for the report
+├── pitch/ # Slides, presentation notebook, summary
+└── README.md # This file
+```
+
+##  Deliverables
+
+- Exploratory data analysis notebook
+- Visualization-rich report with narrative
+- Hypothesis testing summary
+- App feasibility summary
+- Pitch presentation materials
+
+##  Acknowledgments
+
+This project was built as part of a public health innovation initiative by **Public Health France**. The data is freely available from [OpenFoodFacts](https://world.openfoodfacts.org).
+
+
